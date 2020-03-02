@@ -26,6 +26,8 @@ public class Proyecto2FXML extends Application {
         
         stage.setScene(scene);
         stage.show();
+        
+        stage.setResizable(false);
     }
 
     /**
