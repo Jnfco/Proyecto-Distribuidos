@@ -9,25 +9,41 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.layout.GridPane;
 
 /**
  *
  * @author jnfco
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLDocumentController implements Initializable 
+{
     
     @FXML
-    private Label label;
+    private GridPane gridPane;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button centralButton;
+    
+    @FXML
+    private ToggleButton estacion1;
+    
+    @FXML
+    private ToggleButton estacion2;
+    
+    
+    
+    @FXML
+    private void handleButtonAction(ActionEvent event) 
+    {
+        
     }
     
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(URL url, ResourceBundle rb) 
+    {
         // TODO
     }    
     
