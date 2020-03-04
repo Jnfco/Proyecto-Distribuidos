@@ -123,7 +123,7 @@ public class Proyecto2FXML extends Application {
         try
         {
             Connection c = dbConnection();
-            String sql = "SELECT * FROM distribuidor;";
+            String sql = "SELECT * FROM venta;";
             
             ResultSet rs = c.createStatement().executeQuery(sql);
             

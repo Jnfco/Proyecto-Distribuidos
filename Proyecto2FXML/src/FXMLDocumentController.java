@@ -40,7 +40,11 @@ public class FXMLDocumentController implements Initializable
     @FXML
     private TableView tablaEst2;
     
+    @FXML
+    private Button agregarVenta1;
     
+    @FXML
+    private Button agregarVenta2;
     
     @FXML
     private void handleButtonAction(ActionEvent event) 
@@ -52,14 +56,10 @@ public class FXMLDocumentController implements Initializable
     public void initialize(URL url, ResourceBundle rb) 
     {
         // TODO
-        System.out.println("inicializar");
         this.estacion1.wrapTextProperty().setValue(true);
         this.estacion2.wrapTextProperty().setValue(true);
         Proyecto2FXML p2 = new Proyecto2FXML();
         this.tablaEst1 = new TableView(p2.mostrarDatos(tablaEst1));
-        
-        //this.tablaEst1.refresh();
-        System.out.println("tabla creada");
     }    
     
     @FXML
@@ -72,6 +72,18 @@ public class FXMLDocumentController implements Initializable
     private void botonEstacion2Handler(ActionEvent event)
     {
         System.out.println("e2");
+    }
+    
+    @FXML
+    private void agregarVenta1Handler(ActionEvent event)   
+    {
+        // agregar datos de una venta random a la base de datos
+    }
+    
+    @FXML
+    private void agregarVenta2Handler(ActionEvent event)   
+    {
+        // agregar datos de una venta random a la base de datos
     }
     
 }
