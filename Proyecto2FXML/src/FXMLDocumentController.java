@@ -51,12 +51,18 @@ public class FXMLDocumentController implements Initializable
     @FXML
     private TableView tablaEst2;
     
+       @FXML 
+    private Button agregarVenta1; 
+     
+    @FXML 
+    private Button agregarVenta2; 
+    
     
     
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException 
     {
-        System.out.println("Botón Central");
+        System.out.println("BotÃ³n Central");
          
         Stage stage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("Central.fxml"));
@@ -88,5 +94,17 @@ public class FXMLDocumentController implements Initializable
     {
         System.out.println("e2");
     }
+    
+    @FXML 
+    private void agregarVenta1Handler(ActionEvent event)    
+    { 
+        // agregar datos de una venta random a la base de datos 
+    } 
+     
+    @FXML 
+    private void agregarVenta2Handler(ActionEvent event)    
+    { 
+        // agregar datos de una venta random a la base de datos 
+    } 
     
 }
