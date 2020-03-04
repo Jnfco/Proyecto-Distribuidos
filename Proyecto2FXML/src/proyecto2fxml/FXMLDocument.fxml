@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import java.lang.*?>
@@ -118,21 +119,22 @@
                         </StackPane>
                      </children></HBox>
                   <Pane prefHeight="30.0" />
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Base de datos Estación de Servicios 1">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Pane prefHeight="25.0" prefWidth="270.0" />
+                        <Label text="Base de datos Estación de Servicios 2" />
+                     </children>
+                  </HBox>
                   <HBox alignment="CENTER" prefWidth="200.0">
                      <children>
-                        <TableView fx:id="tablaEst1" prefHeight="250.0" prefWidth="420.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
-                        </TableView>
+                        <TableView fx:id="tablaEst1" prefHeight="250.0" prefWidth="420.0" />
                         <Pane prefWidth="50.0" />
-                        <TableView fx:id="tablaEst2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="420.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
-                        </TableView>
+                        <TableView fx:id="tablaEst2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="420.0" />
                      </children>
                   </HBox>
                   <Pane prefWidth="20.0" />

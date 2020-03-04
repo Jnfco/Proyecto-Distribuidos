@@ -15,6 +15,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.GridPane;
+import proyecto2fxml.Proyecto2FXML;
 
 /**
  *
@@ -23,8 +24,6 @@ import javafx.scene.layout.GridPane;
 public class FXMLDocumentController implements Initializable 
 {
     
-    @FXML
-    private GridPane gridPane;
     
     @FXML
     private Button centralButton;
@@ -53,8 +52,14 @@ public class FXMLDocumentController implements Initializable
     public void initialize(URL url, ResourceBundle rb) 
     {
         // TODO
+        System.out.println("inicializar");
         this.estacion1.wrapTextProperty().setValue(true);
         this.estacion2.wrapTextProperty().setValue(true);
+        Proyecto2FXML p2 = new Proyecto2FXML();
+        this.tablaEst1 = new TableView(p2.mostrarDatos(tablaEst1));
+        
+        //this.tablaEst1.refresh();
+        System.out.println("tabla creada");
     }    
     
     @FXML
